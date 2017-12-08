@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    background: url("./images/alex.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 10vh;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav a {
+    color: black;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px solid black;
+    background-color: #D66767;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5em;
+    opacity: 0.8;
+}
+#nav a:hover {
+    opacity: 0.6;
+    color: white;
+}
+
+/*Hamburger button
+
+.hamburger-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+#nav #main-nav-toggle+ul {
+    display: none;
+    right: 0;
+}
+
+#nav #main-nav-toggle:checked+ul {
+    display: inline-block;
+    text-align: center;
+}
+
+#main-nav-toggle {
+    display: none;
+}*/
+
+#content {
+    width: 80%;
+    margin: 10vh auto 0 auto;
+    flex: 1;
+}
+
+.main-container {
+    display: grid;
+    
+    align-items: end;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 30px;
+    width: 100%;
+    height: 550px;
+}
+.left-container {
+    display: grid;
+}
+
+.right-container {
+    display: grid;
+    grid-gap: 200px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    width: 100%;
+    color: white;
+    position: initial;
+}
+.half-top-container {
+    width: 100%;
+    background-color: #D66767;
+    opacity: 0.8;
+    
+    border-radius: 10px;
+    padding: 2em;
+    margin-right: 1em;
+}
+.half-top-container h1 {
+    font-size: 50px;
+    text-align: center;
+   
+}
+.half-top-container p {
+    font-size: 20px;
+}
