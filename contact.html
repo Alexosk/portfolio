@@ -1,34 +1,78 @@
-<DOCTYPE! html>
-        <html>
-    
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" href="main.css">
-            <script src="index.js"></script>
-        </head>
-    
-        <body>
-            <header>
-                <div id="nav" class="flex-spaceAround margin-allAround">
-                    <ul>
-                        <li class="margin-Left"><a href="index.html">Home</a></li>
-                        <li class="margin-Left">
-                            <a href="#">My work</a>
-                        </li>
-                        <li class="margin-Left">
-                            <a href="about-me.html">About me</a>
-                        </li>
-                        <li class="margin-Left margin-Right">
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-            <div id="content">
-               
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alexandra Sigurdardottir</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header id="nav" class="flex-spaceAround margin-allAround">
+
+        <ul>
+            <li class="margin-Left">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="margin-Left">
+                <a href="my-work.html">My work</a>
+            </li>
+            <li class="margin-Left">
+                <a href="about-me.html">About me</a>
+            </li>
+            <li class="margin-Left margin-Right">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+    </header>
+    <div id="content">
+        <div class="main-container">
+            <div class="flex-container-column flex-spaceAround ">
+                <h1>Contact</h1>
+                <p>Want to get in touch?
+                    <br> Send me an e-mail:</p>
             </div>
-    
-        </body>
-    
-        </html>
+            <form method="POST" name="contact-form" action="contact-form-handler.php">
+
+                <ul class="flex-form">
+
+                    <li>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                    </li>
+                    <li>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    </li>
+                    <li>
+                        <label for="e-mail">E-mail</label>
+                        <input type="e-mail" id="e-mail" placeholder="e.g yourname@email.com">
+                    </li>
+                    <li>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+                    </li>
+
+                    <li>
+                        <button type="submit" id="submit"> Submit </button>
+                    </li>
+                </ul>
+            </form>
+            <div class="flex-spaceAround width margin-allAround">
+                    <img class="margin-Left" href="#" src="./images/facebook3.png" width="50" height="50" alt="facebook image link">
+                    <img class="margin-Left" href="#" src="./images/instagram.png" width="50" height="50" alt="instagram image link">
+                    <img class="margin-Left" href="#" src="./images/linkedIn.png" width="50" height="50" alt="Linked in image link">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

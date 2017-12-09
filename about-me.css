@@ -17,12 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    margin-top: 10vh;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
 .width {
     width: 40%;
 }
@@ -43,6 +37,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    z-index: 9999;
 }
 
 #nav li {
@@ -68,7 +63,7 @@ header {
 
 #content {
     width: 80%;
-    margin: 25vh auto 0 auto;
+    margin: 25vh auto 5vh; auto;
     flex: 1;
 }
 
@@ -96,9 +91,10 @@ header {
     opacity: 0.8;
     border-radius: 10px;
     padding: 3em;
+    border: 2px solid black;
 }
 .half-top-container h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
    
 }
