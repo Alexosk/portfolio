@@ -9,7 +9,7 @@
     <script src="main.js"></script>
 </head>
 
-<body class="site">
+<body class="Site">
     <header id="nav" class="flex-spaceAround margin-allAround">
 
         <ul>
@@ -35,25 +35,21 @@
                 <p class="contact-p">Want to get in touch?
                     <br> Send me an e-mail:</p>
             </div>
-            <form method="POST" name="contact-form" action="contact-form-handler.php">
+            <form method="POST" name="form" action="form.php">
 
                 <ul class="flex-form">
 
                     <li>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your first name">
                     </li>
                     <li>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
-                    </li>
-                    <li>
-                        <label for="e-mail">E-mail</label>
-                        <input type="e-mail" id="e-mail" placeholder="e.g yourname@email.com">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="e-mail" placeholder="e.g yourname@email.com">
                     </li>
                     <li>
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Subject">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
                     </li>
                     <li>
                         <label for="message">Message</label>
@@ -61,14 +57,14 @@
                     </li>
 
                     <li>
-                        <button type="submit" id="submit"> Submit </button>
+                        <button type="submit" name="submit" id="submit"> Submit </button>
                     </li>
                 </ul>
             </form>
     
         </div>
     </div>
-    <footer class="row-flexEnd flex-spaceBetween">
+    <footer class="row-flexEnd flex-spaceBetween margin-allAround">
             <ul class="flex-spaceAround width social-list">
                 <li>
                     <img class="margin-Left" href="#" src="./images/facebook3.png" width="50" height="50" alt="facebook image link">
@@ -77,7 +73,7 @@
                     <img class="margin-Left" href="#" src="./images/instagram.png" width="50" height="50" alt="instagram image link">
                 </li>
                 <li>
-                    <img class="margin-Left" href="#" src="./images/linkedIn.png" width="50" height="50" alt="Linked in image link">
+                    <img class="margin-Left" href="#" src="./images/linkedIn.png" width="50" height="50" alt="LinkedIn image link">
                 </li>
             </ul>
             <p class="margin-allAround">Copyright 2017 Alexandra Sigurdardottir &#8226; All&nbsp;Rights&nbsp;Reserved</p>
