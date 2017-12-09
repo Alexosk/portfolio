@@ -12,16 +12,22 @@ html {
     background-size: cover;
 }
 
+
 body {
     font-family: arial, sans-serif;
     overflow-x: hidden;
 }
-h1 {
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+.contact {
     align-self: flex-start;
     font-size: 50px;
     color: white;
 }
-p {
+.contact-p {
     font-size: 30px;
     margin: 1em;
     color: white;
@@ -54,10 +60,6 @@ p {
     color: white;
 }
 
-.width {
-    width: 40%;
-}
-
 .flex-container-column {
     display: flex;
     flex-flow: column wrap;
@@ -67,9 +69,28 @@ p {
     align-items: center;
 }
 
+.width {
+    width: 30%;
+}
+.social-list {
+    list-style: none;
+}
+.flex-flexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
 .flex-spaceAround {
     display: flex;
     justify-content: space-around;
+}
+.row-flexEnd {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.flex-spaceBetween {
+    display: flex;
+    justify-content: space-between;
 }
 
 .margin-allAround {
@@ -131,7 +152,8 @@ p {
 .flex-form input {
     height: 15px;
     border: none;
-    border-radius: 2px;
+    border: 0.5px solid black;
+ 
 }
 
 .flex-form li input,
@@ -139,12 +161,15 @@ p {
     margin: 1em;
     padding: 1em;
     font-size: 15px;
+    border-radius: 2px;
+    
 }
 
 .flex-form li textarea {
     border: none;
     resize: none;
     border-radius: 2px;
+    border: 0.5px solid black;
 }
 
 .flex-form li button {
