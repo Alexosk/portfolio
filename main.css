@@ -15,32 +15,38 @@ html {
 body {
     font-family: arial, sans-serif;
     overflow-x: hidden;
-    
 }
+
 .Site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
+
 .width {
     width: 30%;
 }
+
 .social-list {
     list-style: none;
 }
+
 .flex-flexEnd {
     display: flex;
     justify-content: flex-end;
 }
+
 .flex-spaceAround {
     display: flex;
     justify-content: space-around;
 }
+
 .row-flexEnd {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
+
 .flex-spaceBetween {
     display: flex;
     justify-content: space-between;

@@ -12,26 +12,29 @@ html {
     background-size: cover;
 }
 
-
 body {
     font-family: arial, sans-serif;
     overflow-x: hidden;
 }
+
 .Site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
+
 .contact {
     align-self: flex-start;
     font-size: 50px;
     color: white;
 }
+
 .contact-p {
     font-size: 30px;
     margin: 1em;
     color: white;
 }
+
 #nav {
     display: flex;
     flex-flow: row wrap;
@@ -55,6 +58,7 @@ body {
     font-size: 20px;
     opacity: 0.8;
 }
+
 #nav a:hover {
     border: 2px solid white;
     color: white;
@@ -64,6 +68,7 @@ body {
     display: flex;
     flex-flow: column wrap;
 }
+
 .flex-center-items {
     display: inline-flex;
     align-items: center;
@@ -72,22 +77,27 @@ body {
 .width {
     width: 30%;
 }
+
 .social-list {
     list-style: none;
 }
+
 .flex-flexEnd {
     display: flex;
     justify-content: flex-end;
 }
+
 .flex-spaceAround {
     display: flex;
     justify-content: space-around;
 }
+
 .row-flexEnd {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
+
 .flex-spaceBetween {
     display: flex;
     justify-content: space-between;
@@ -153,7 +163,6 @@ body {
     height: 15px;
     border: none;
     border: 0.5px solid black;
- 
 }
 
 .flex-form li input,
@@ -162,7 +171,6 @@ body {
     padding: 1em;
     font-size: 15px;
     border-radius: 2px;
-    
 }
 
 .flex-form li textarea {
