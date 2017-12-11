@@ -29,16 +29,12 @@ html {
     text-decoration: none;
     color: black;
     margin: 0 10px;
-    line-height: 70px;
     z-index:1000;
     position: relative;
 }
 #nav label {
-    margin: 0 40px 0 0;
-    font-size: 32px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
+    margin: 20px 35px 0 0;
+    display: none;   
     float: right;
 }
 #toggle {
@@ -55,9 +51,12 @@ html {
         display: none;
 
     }
+    .menu a:first-child {
+        border-top: 2px solid #000;
+    }
     .menu a {
         display: block;
-        border-bottom: 1px solid #000;
+        border-bottom: 2px solid #000;
         margin: 0;
         background-color: #D66767;
         font-weight: bold;
@@ -67,6 +66,15 @@ html {
     }
     #toggle:checked + .menu {
         display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ul li {
+        align-content: center;
+    }
+    footer ul {
+        margin-left: 20px;
     }
 }
 
@@ -117,8 +125,6 @@ html {
     margin-right: 1em;
 }
 
-
-
 #content {
     width: 80%;
     margin: 25vh auto 0 auto;
@@ -160,4 +166,15 @@ html {
 
 .half-top-container p {
     font-size: 20px;
+}
+img:hover {
+    opacity: 0.7;
+}
+footer {
+    font-weight: bold;
+}
+
+footer img:hover {
+    transform: rotate(-15deg);
+    cursor: pointer;
 }
