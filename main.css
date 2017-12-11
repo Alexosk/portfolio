@@ -30,6 +30,8 @@ html {
     color: black;
     margin: 0 10px;
     line-height: 70px;
+    z-index:1000;
+    position: relative;
 }
 #nav label {
     margin: 0 40px 0 0;
