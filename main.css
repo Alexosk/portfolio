@@ -177,4 +177,6 @@ footer {
 footer img:hover {
     transform: rotate(-15deg);
     cursor: pointer;
+    height: 61px;
+    width: 61px;
 }
