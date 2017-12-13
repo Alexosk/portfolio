@@ -40,6 +40,9 @@ html {
 #toggle {
     display: none;
 }
+.logo {
+    float: left;
+}
 @media only screen and (max-width: 500px) {
     #nav label {
         display: block;
@@ -70,6 +73,7 @@ html {
     footer {
         text-align: center;
     }
+
     footer ul li {
         align-content: center;
     }
