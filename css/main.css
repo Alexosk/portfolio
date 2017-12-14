@@ -19,7 +19,7 @@ html, body {
 }
 
 html {
-  background: url("./images/alex.png") no-repeat center center fixed;
+  background: url("../images/alex-min.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,6 +70,7 @@ html {
     display: none;
     text-align: center;
     width: 100%;
+    background-color: #D66767;
   }
   .menu a:first-child {
     border-top: 2px solid #000;
@@ -186,19 +187,4 @@ html {
 
 .half-top-container p {
   font-size: 20px;
-}
-
-img:hover {
-  opacity: 0.7;
-}
-
-footer {
-  font-weight: bold;
-}
-
-footer img:hover {
-  cursor: pointer;
-  height: 61px;
-  transform: rotate(-15deg);
-  width: 61px;
 }
