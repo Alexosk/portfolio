@@ -1,7 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 html {
@@ -19,8 +28,8 @@ body {
 
 .Site {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .width {
@@ -64,50 +73,51 @@ body {
     margin-right: 1em;
 }
 
-#nav {
-    text-align: right;
+.nav {
     height: 70px;
     line-height: 70px;
+    text-align: right;
 }
 .menu {
     margin: 0 30px 0 0;
 }
 .menu a {
     clear: right;
-    text-decoration: none;
     color: black;
     margin: 0 10px;
-    z-index:1000;
     position: relative;
+    text-decoration: none;
+    z-index:1000;
 }
-#nav label {
+.nav label {
+  display: none;
+  float: right;
     margin: 20px 35px 0 0;
-    display: none;   
-    float: right;
+
 }
 #toggle {
     display: none;
 }
 @media only screen and (max-width: 500px) {
-    #nav label {
+    .nav label {
+      cursor: pointer;
         display: block;
-        cursor: pointer;
+
     }
     .menu {
+      display: none;
         text-align: center;
         width: 100%;
-        display: none;
-
     }
     .menu a:first-child {
         border-top: 2px solid #000;
     }
     .menu a {
+      background-color: #D66767;
+      border-bottom: 2px solid #000;
         display: block;
-        border-bottom: 2px solid #000;
+      font-weight: bold;
         margin: 0;
-        background-color: #D66767;
-        font-weight: bold;
     }
     .menu a:hover {
         color: white;
@@ -126,11 +136,10 @@ body {
     }
 }
 
-#content {
+.content {
+  flex: 1;
+  margin: 25vh auto 5vh auto;
     width: 80%;
-    margin: 25vh auto 5vh;
-    auto;
-    flex: 1;
 }
 
 .main-container {
@@ -140,26 +149,26 @@ body {
 
 .left-container {
     display: flex;
+    flex: 2;
     flex-flow: column wrap;
     justify-content: flex-end;
-    flex: 2;
 }
 
 .right-container {
+  color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: white;
     flex: 1;
+    flex-direction: column;
     height: 390px;
+    justify-content: flex-start;
 }
 
 .half-top-container {
     background-color: #D66767;
-    opacity: 0.8;
-    border-radius: 10px;
-    padding: 3em;
     border: 2px solid black;
+    border-radius: 10px;
+    opacity: 0.8;
+    padding: 3em;  
 }
 
 .half-top-container h1 {
