@@ -70,6 +70,10 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
+  html {
+      background: url("../images/just-train.png");
+    }
+    
     #toggle:checked+.menu {
         display: block;
     }
