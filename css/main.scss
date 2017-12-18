@@ -45,7 +45,7 @@ html {
 }
 
 .menu {
-    margin: 0 30px 0 0;
+    margin: 1em 2em 0 0;
 
     a {
         clear: right;
@@ -54,6 +54,15 @@ html {
         position: relative;
         text-decoration: none;
         z-index: 1000;
+        font-size: 3vh;
+        font-weight: bold;
+        margin-left: 1em;
+    }
+    a:hover {
+      padding: 10px;
+      border: 3px solid black;
+      border-radius: 50px;
+      background-color: $bg-color;
     }
 }
 
@@ -73,7 +82,7 @@ html {
   html {
       background: url("../images/just-train.png");
     }
-    
+
     #toggle:checked+.menu {
         display: block;
     }
@@ -90,13 +99,12 @@ html {
         display: none;
         text-align: center;
         width: 100%;
-
         a {
             background-color: $bg-color;
             border-bottom: $primary-border;
             display: block;
-            font-weight: bold;
             margin: 0;
+            font-size: 20px;
         }
 
         a:first-child {
@@ -222,7 +230,9 @@ html {
     border: $primary-border;
     border-radius: 10px;
     opacity: $opacity;
-    padding: 3em;
+    padding: 2em;
+    text-align: center;
+    font-size: 3vh;
 
     h1 {
         font-size: 50px;
@@ -232,6 +242,11 @@ html {
     p {
         font-size: 20px;
     }
+}
+#demo {
+  text-align: center;
+  font-size: 3vh;
+  color: black;
 }
 
 footer {

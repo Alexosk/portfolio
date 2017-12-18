@@ -34,14 +34,22 @@ html {
   text-align: right; }
 
 .menu {
-  margin: 0 30px 0 0; }
+  margin: 1em 2em 0 0; }
   .menu a {
     clear: right;
     color: #000;
     margin: 0 10px;
     position: relative;
     text-decoration: none;
-    z-index: 1000; }
+    z-index: 1000;
+    font-size: 3vh;
+    font-weight: bold;
+    margin-left: 1em; }
+  .menu a:hover {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #d66767; }
 
 .nav label {
   display: none;
@@ -52,6 +60,9 @@ html {
   display: none; }
 
 @media only screen and (max-width: 500px) {
+  html {
+    background: url("../images/just-train.png"); }
+
   #toggle:checked + .menu {
     display: block; }
 
@@ -68,8 +79,8 @@ html {
       background-color: #d66767;
       border-bottom: 2px solid black;
       display: block;
-      font-weight: bold;
-      margin: 0; }
+      margin: 0;
+      font-size: 20px; }
     .menu a:first-child {
       border-top: 2px solid black; }
     .menu a:hover {
@@ -166,12 +177,19 @@ html {
   border: 2px solid black;
   border-radius: 10px;
   opacity: 0.8;
-  padding: 3em; }
+  padding: 2em;
+  text-align: center;
+  font-size: 3vh; }
   .half-top-container h1 {
     font-size: 50px;
     text-align: center; }
   .half-top-container p {
     font-size: 20px; }
+
+#demo {
+  text-align: center;
+  font-size: 3vh;
+  color: black; }
 
 footer img:hover {
   cursor: pointer;
