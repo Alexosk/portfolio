@@ -51,7 +51,7 @@ body {
 }
 
 .menu {
-    margin: 0 30px 0 0;
+    margin: 1em 2em 0 0;
 }
 
 .menu a {
@@ -61,25 +61,15 @@ body {
     position: relative;
     text-decoration: none;
     z-index: 1000;
-    font-size: 3vh;
+    font-size: 2.5vh;
     font-weight: bold;
     margin-left: 1em;
-}
-.menu a:hover {
-  padding: 10px;
-  border: 3px solid black;
-  border-radius: 50px;
-  background-color: #d66767;
 }
 
 .nav label {
     display: none;
     float: right;
     margin: 20px 35px 0 0;
-}
-
-div p {
-    opacity: .8;
 }
 
 #toggle {
@@ -131,40 +121,50 @@ div p {
         margin-left: 20px;
     }
 }
-
-.abilities {
-    background-color: #d66767;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
-    opacity: 0.8;
+h1 {
+  font-size: 40px;
+  color: white;
 }
-
 h2 {
     font-size: 20px;
 }
+p {
+  font-size: 20px;
+  color: white;
+}
 
 .my-work {
-    font-size: 25px;
     text-align: center;
     color: white;
     background-color: #d66767;
     border: 2px solid black;
     border-radius: 5px;
-    opacity: 0.8;
+    margin-bottom: 2em;
+    opacity: 0.9;
 }
-
-.abilities p {
-    font-size: 30px;
-    font-weight: bold;
-
+.my-work img {
+  align-self: center;
+}
+.my-work a {
+  color: black;
+  font-size: 25px;
+}
+.my-work a:hover {
+  color: blue;
+  cursor: pointer;
+}
+.my-work p {
+  line-height: 4vh;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
 }
-
+.flex-justifyContant {
+  display: flex;
+  justify-content: center;
+}
 .flex-container-column {
     display: flex;
     flex-flow: column wrap;
@@ -305,4 +305,16 @@ h2 {
     margin: 1em 1.3em 1em auto;
     padding: 12px 22px;
     text-transform: uppercase;
+}
+footer img:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+                transform: scale(1.3);
+}
+
+footer p {
+  font-size: 15px;
+  color: black;
 }
