@@ -17,7 +17,8 @@ time, mark, audio, video {
 body, html {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: white; }
 
 html {
   background: url("../images/alex-min.png") no-repeat center center fixed;
@@ -86,6 +87,14 @@ html {
     footer ul {
       margin-left: 20px;
       align-self: center; } }
+h1 {
+  font-size: 50px;
+  text-align: center; }
+
+p {
+  font-size: 20px;
+  line-height: 4vh; }
+
 .Site {
   display: flex;
   flex-direction: column;
@@ -172,12 +181,6 @@ html {
   text-align: center;
   font-size: 3vh;
   margin-top: 80px; }
-  .half-top-container h1 {
-    font-size: 50px;
-    text-align: center; }
-  .half-top-container p {
-    font-size: 20px;
-    line-height: 4vh; }
 
 #count-down {
   text-align: center;

@@ -1,0 +1,37 @@
+html {
+    background: url("../images/just-train.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.my-work {
+    text-align: center;
+    color: white;
+    background-color: #d66767;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    opacity: .9;
+}
+
+.my-work img {
+    align-self: center;
+}
+
+.my-work a {
+    color: black;
+    font-size: 25px;
+}
+
+.my-work a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.my-work p {
+    line-height: 4vh;
+}
