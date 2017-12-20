@@ -18,7 +18,7 @@ $bg-color: #d66767;
 $opacity: .8;
 $hover-opacity: .7;
 $text-color: #fff;
-$primary-border: 2px solid black;
+$primary-border: 0.1em solid black;
 
 /* -------------*/
 
@@ -40,8 +40,8 @@ html {
 }
 
 .nav {
-    height: 70px;
-    line-height: 70px;
+    height: 5em;
+    line-height: 5em;
     text-align: right;
 }
 
@@ -51,7 +51,7 @@ html {
     a {
         clear: right;
         color: #000;
-        margin: 0 10px;
+        margin: 0 0.6em;
         position: relative;
         text-decoration: none;
         z-index: 1000;
@@ -65,7 +65,7 @@ html {
     label {
         display: none;
         float: right;
-        margin: 20px 35px 0 0;
+        margin: 1.2em 2em 0 0;
     }
 }
 
@@ -74,9 +74,6 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
-    html {
-        background: url("../images/just-train.png");
-    }
 
     #toggle:checked+.menu {
         display: block;
@@ -94,13 +91,14 @@ html {
         display: none;
         text-align: center;
         width: 100%;
+        margin: 0 2em 0 0;
 
         a {
             background-color: $bg-color;
             border-bottom: $primary-border;
             display: block;
             margin: 0;
-            font-size: 20px;
+            font-size: 1.2em;
         }
 
         a:first-child {
@@ -115,8 +113,8 @@ html {
     footer {
         text-align: center;
 
-        ul {
-            margin-left: 20px;
+        div {
+            margin-left: 1.2em;
             align-self: center;
         }
     }
@@ -128,7 +126,7 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 0.9em;
     line-height: 4vh;
 }
 
@@ -138,6 +136,49 @@ p {
     min-height: 100vh;
 }
 
+main {
+    flex: 1;
+    margin: 5vh auto 0 auto;
+    width: 80%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-container {
+    display: flex;
+    flex: 2;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.right-container {
+    color: $text-color;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.half-top-container {
+    background-color: $bg-color;
+    border: $primary-border;
+    border-radius: 10px;
+    opacity: $opacity;
+    padding: 2em;
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 5em;
+}
+
+#count-down {
+    text-align: center;
+    font-size: 3vh;
+    color: #000;
+    font-weight: bold;
+}
 .width {
     width: 30%;
 }
@@ -202,50 +243,6 @@ p {
     padding: 2em;
 }
 
-.content {
-    flex: 1;
-    margin: 5vh auto 0 auto;
-    width: 80%;
-}
-
-.main-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.left-container {
-    display: flex;
-    flex: 2;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-}
-
-.right-container {
-    color: $text-color;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.half-top-container {
-    background-color: $bg-color;
-    border: $primary-border;
-    border-radius: 10px;
-    opacity: $opacity;
-    padding: 2em;
-    text-align: center;
-    font-size: 3vh;
-    margin-top: 80px;
-}
-
-#count-down {
-    text-align: center;
-    font-size: 3vh;
-    color: #000;
-    font-weight: bold;
-}
-
 footer {
     img:hover {
         cursor: pointer;
@@ -256,7 +253,7 @@ footer {
     }
 
     p {
-        font-size: 15px;
+        font-size: 1em;
         color: #000;
     }
 }

@@ -4,28 +4,24 @@ html {
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-            font-family: arial, sans-serif;
-            overflow-x: hidden;
-
-}
-
-@media only screen and (max-width: 500px) {
+    font-family: arial, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
-  font-size: 40px;
-  text-align: left;
+    font-size: 2.5em;
+    text-align: left;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.25em;
     color: white;
-
 }
+
 .main-container {
     display: flex;
     flex-flow: column wrap;
@@ -34,8 +30,8 @@ p {
 
 .flex-form {
     background-color: #d66767;
-    border: 2px solid black;
-    border-radius: 2px;
+    border: .1em solid black;
+    border-radius: .1em;
     list-style-type: none;
     margin: 0 auto;
     max-width: 800px;
@@ -52,45 +48,51 @@ p {
     font-weight: 600;
     letter-spacing: .09em;
     margin-left: .5em;
-    padding: 10px;
+    padding: .6em;
     text-transform: uppercase;
 }
 
 .flex-form > li > label {
-    flex: 1 0 120px;
-    max-width: 220px;
+    flex: 1 0 7.5em;
+    max-width: 13.75em;
     color: black;
 }
 
 .flex-form > li > label + * {
-    flex: 1 0 220px;
+    flex: 1 0 13.75em;
 }
 
 .flex-form input {
-    border: .5px solid black;
+    border: .05em solid black;
 }
 
 .flex-form li input, .flex-form li textarea {
-    border-radius: 2px;
-    font-size: 15px;
+    border-radius: .1em;
+    font-size: .9em;
     margin: 1em;
     padding: 1em;
     outline: none;
 }
 
 .flex-form li textarea {
-    border: .5px solid #000;
-    border-radius: 2px;
+    border: .05em solid #000;
+    border-radius: .1em;
     resize: none;
 }
 
 .flex-form li button {
     background: #333;
-    border-radius: 2px;
+    border-radius: .1em;
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: .7em;
     letter-spacing: .09em;
     margin: 1em 1.3em 1em auto;
-    padding: 12px 22px;
+    padding: 1em 1.7em;
     text-transform: uppercase;
+}
+
+.flex-form li button:hover {
+  background-color: lightgrey;
+  color: black;
+  border: 0.1em solid black;
 }
