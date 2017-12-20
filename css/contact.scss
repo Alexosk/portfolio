@@ -105,8 +105,12 @@ body {
     }
 
     footer ul {
+    footer ul {
         margin-left: 20px;
     }
+}
+h1 {
+  font-size: 40px;
 }
 
 h2 {
@@ -117,16 +121,30 @@ p {
     font-size: 20px;
     color: white;
     text-align: center;
-
-    .paragraph1 {
-        float: left;
-    }
-
-    .paragraph2 {
-        float: right;
-    }
 }
-
+.my-work {
+ text-align: center;
+ color: white;
+ background-color: #d66767;
+ border: 2px solid black;
+ border-radius: 5px;
+ margin-bottom: 2em;
+ opacity: 0.9;
+ }
+ .my-work img {
+  align-self: center;
+ }
+ .my-work a {
+ color: black;
+ font-size: 25px;
+ }
+ .my-work a:hover {
+ color: blue;
+ cursor: pointer;
+ }
+ .my-work p {
+ line-height: 4vh;
+ }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -179,15 +197,6 @@ p {
 .margin-allAround {
     margin: 1em;
 }
-
-.padding-allAround-1em {
-    padding: 1em;
-}
-
-.padding-allAround {
-    padding: 2em;
-}
-
 .margin-Left {
     margin-left: 1em;
 }
@@ -198,6 +207,14 @@ p {
 
 .margin-right {
     margin-right: 1em;
+}
+
+.padding-allAround-1em {
+    padding: 1em;
+}
+
+.padding-allAround {
+    padding: 2em;
 }
 
 .content {
