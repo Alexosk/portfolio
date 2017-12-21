@@ -18,7 +18,7 @@ body, html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  color: white; }
+  color: #fff; }
 
 html {
   background: url("../images/alex-min.png") no-repeat center center fixed;
@@ -55,7 +55,7 @@ html {
 #toggle {
   display: none; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 860px) {
   #toggle:checked + .menu {
     display: block; }
 
@@ -64,13 +64,13 @@ html {
     display: block; }
 
   .menu {
-    background-color: #d66767;
+    background-color: #C6383A;
     display: none;
     text-align: center;
     width: 100%;
     margin: 0 2em 0 0; }
     .menu a {
-      background-color: #d66767;
+      background-color: #C6383A;
       border-bottom: 0.1em solid black;
       display: block;
       margin: 0;
@@ -82,9 +82,8 @@ html {
 
   footer {
     text-align: center; }
-    footer div {
-      margin-left: 1.2em;
-      align-self: center; } }
+    footer .social-media-list {
+      margin-left: 7em; } }
 h1 {
   font-size: 50px;
   text-align: center; }

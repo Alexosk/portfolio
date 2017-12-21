@@ -19,7 +19,7 @@ h2 {
 
 p {
     font-size: 1.25em;
-    color: white;
+    color: #fff;
 }
 
 .main-container {
@@ -55,7 +55,7 @@ p {
 .flex-form > li > label {
     flex: 1 0 7.5em;
     max-width: 13.75em;
-    color: black;
+    color: #000;
 }
 
 .flex-form > li > label + * {
@@ -63,7 +63,7 @@ p {
 }
 
 .flex-form input {
-    border: .05em solid black;
+    border: .05em solid #000;
 }
 
 .flex-form li input, .flex-form li textarea {
@@ -78,6 +78,7 @@ p {
     border: .05em solid #000;
     border-radius: .1em;
     resize: none;
+    overflow-x: hidden;
 }
 
 .flex-form li button {
@@ -92,7 +93,7 @@ p {
 }
 
 .flex-form li button:hover {
-  background-color: lightgrey;
+  background-color: #eee;
   color: black;
-  border: 0.1em solid black;
+  border: 0.1em solid #000;
 }

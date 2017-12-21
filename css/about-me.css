@@ -1,34 +1,38 @@
 html {
     background: url("../images/about-me5.png") no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     font-family: arial, sans-serif;
     overflow-x: hidden;
 }
+
 p {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
+
 .left-container {
-    color: white;
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      background-color: #D66767;
-      border: 0.1em solid black;
-      border-radius: 0.6em;
-      opacity: 0.8;
-      padding: 3em;
-      margin-bottom: 4em;
+    color: #fff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #d66767;
+    border: .1em solid #000;
+    border-radius: .6em;
+    opacity: .8;
+    padding: 3em;
+    margin-bottom: 4em;
 }
 
 .right-container {
-flex: 2;
+    flex: 2;
 }
+
 .right-paragraph {
-  text-align: right;
+    text-align: right;
 }
+
 .left-paragraph {
-  text-align: left;
+    text-align: left;
 }

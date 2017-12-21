@@ -26,7 +26,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    color: white;
+    color: #fff;
 }
 
 html {
@@ -73,7 +73,7 @@ html {
     display: none;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 860px) {
 
     #toggle:checked+.menu {
         display: block;
@@ -87,14 +87,14 @@ html {
     }
 
     .menu {
-        background-color: $bg-color;
+        background-color: #C6383A;
         display: none;
         text-align: center;
         width: 100%;
         margin: 0 2em 0 0;
 
         a {
-            background-color: $bg-color;
+            background-color: #C6383A;
             border-bottom: $primary-border;
             display: block;
             margin: 0;
@@ -113,9 +113,8 @@ html {
     footer {
         text-align: center;
 
-        div {
-            margin-left: 1.2em;
-            align-self: center;
+        .social-media-list {
+            margin-left: 7em;
         }
     }
 }
