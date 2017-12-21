@@ -10,6 +10,29 @@ html {
 
 p {
     font-size: 1.3em;
+    line-height: 2em;
+}
+
+.left-container img {
+    border-radius: .2em;
+    border: .2em solid black;
+    background-color: black;
+    margin-top: 2em;
+    display: none;
+}
+
+@media only screen and (max-width: 660px) {
+    html {
+        background: url("../images/just-train.png") no-repeat center center fixed;
+    }
+
+    .left-container p {
+        text-align: left;
+    }
+
+    .left-container img {
+        display: block;
+    }
 }
 
 .left-container {
@@ -29,10 +52,8 @@ p {
     flex: 2;
 }
 
-.right-paragraph {
-    text-align: right;
-}
-
-.left-paragraph {
-    text-align: left;
+.homepage-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }

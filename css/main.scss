@@ -18,7 +18,7 @@ $bg-color: #d66767;
 $opacity: .8;
 $hover-opacity: .7;
 $text-color: #fff;
-$primary-border: 0.1em solid black;
+$primary-border: .1em solid black;
 
 /* -------------*/
 
@@ -26,11 +26,11 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    color: #fff;
+    color: $text-color;
 }
 
 html {
-    background: url("../images/alex-min.png") no-repeat center center fixed;
+    background: url("../images/alex-2.png") no-repeat center center fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -42,7 +42,7 @@ html {
 .nav {
     height: 5em;
     line-height: 5em;
-    text-align: right;
+    text-align: center;
 }
 
 .menu {
@@ -50,12 +50,12 @@ html {
 
     a {
         clear: right;
-        color: #000;
-        margin: 0 0.6em;
+        color: #e2d9d9;
+        margin: 0 .6em;
         position: relative;
         text-decoration: none;
         z-index: 1000;
-        font-size: 2.5vh;
+        font-size: 2.7vh;
         font-weight: bold;
         margin-left: 1em;
     }
@@ -69,11 +69,25 @@ html {
     }
 }
 
+#highLightHeading {
+    text-decoration: underline;
+    color: white;
+}
+
 #toggle {
     display: none;
 }
 
-@media only screen and (max-width: 860px) {
+.mobile-profile-image {
+    display: none;
+    border: $primary-border;
+    background-color: black;
+}
+
+@media only screen and (max-width: 640px) {
+    html {
+        background: url("../images/just-train.png") no-repeat center center fixed;
+    }
 
     #toggle:checked+.menu {
         display: block;
@@ -84,17 +98,21 @@ html {
             cursor: pointer;
             display: block;
         }
+
+        .logo {
+            display: none;
+        }
     }
 
     .menu {
-        background-color: #C6383A;
+        background-color: #853f3f;
         display: none;
         text-align: center;
         width: 100%;
         margin: 0 2em 0 0;
 
         a {
-            background-color: #C6383A;
+            background-color: #853f3f;
             border-bottom: $primary-border;
             display: block;
             margin: 0;
@@ -107,6 +125,27 @@ html {
 
         a:hover {
             color: $text-color;
+        }
+
+        a:nth-child(3) {
+            border: none;
+        }
+    }
+
+    .right-container {
+        .half-top-container {
+            margin-top: 0;
+            margin-bottom: 1.5em;
+        }
+
+        img {
+            display: block;
+            align-self: center;
+            border-radius: .2em;
+        }
+
+        h1 {
+            margin-top: 1em;
         }
     }
 
@@ -125,8 +164,8 @@ h1 {
 }
 
 p {
-    font-size: 0.9em;
-    line-height: 4vh;
+    font-size: .9em;
+    line-height: 2em;
 }
 
 .Site {
@@ -172,12 +211,21 @@ main {
     margin-top: 5em;
 }
 
+.right-paragraph {
+    text-align: right;
+}
+
+.left-paragraph {
+    text-align: left;
+}
+
 #count-down {
     text-align: center;
     font-size: 3vh;
     color: #000;
     font-weight: bold;
 }
+
 .width {
     width: 30%;
 }

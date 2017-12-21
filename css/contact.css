@@ -11,6 +11,7 @@ html {
 h1 {
     font-size: 2.5em;
     text-align: left;
+    color: #e2d9d9;
 }
 
 h2 {
@@ -18,8 +19,9 @@ h2 {
 }
 
 p {
-    font-size: 1.25em;
-    color: #fff;
+    font-size: 1.3em;
+    color: #e2d9d9;
+    line-height: 2em;
 }
 
 .main-container {
@@ -36,6 +38,7 @@ p {
     margin: 0 auto;
     max-width: 800px;
     opacity: .8;
+    margin-bottom: 2em;
 }
 
 .flex-form li {
@@ -93,7 +96,7 @@ p {
 }
 
 .flex-form li button:hover {
-  background-color: #eee;
-  color: black;
-  border: 0.1em solid #000;
+    background-color: #eee;
+    color: black;
+    border: .1em solid #000;
 }
