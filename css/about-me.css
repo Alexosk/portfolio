@@ -57,3 +57,9 @@ p {
     color: black;
     font-weight: bold;
 }
+.landscape-image {
+  width: 100%;
+}
+.guitar-image {
+  width: 100%;
+}
